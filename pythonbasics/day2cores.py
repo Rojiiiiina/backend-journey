@@ -1,4 +1,4 @@
-#Python functions
+#   #Python functions
 # def my_function():
 #     print("This is my function")
 #     print("Bye Bye Rojina")
@@ -8,7 +8,7 @@
 # my_function()
 # my_function()
 
-# Arguments
+
 # def my_function(fname): #(this is parameter)
 #     print(fname + " Mishra")
     
@@ -17,7 +17,7 @@
 # my_function("Rhythm")
 
 
-# using default value
+
 # def my_function(name = "roji"):
 #     print("Hello", name)
 
@@ -76,7 +76,29 @@
 # print(my_function(1,2,3,4,5,6,7))
 
 
-
+# def my_function(*numbers):
+#     total = 0
+#     for num in numbers:
+#         if num % 2 == 1:
+#           total+=1
+#     return total
+# print(my_function(1,2,3,4,5,6))
     
-            
+
+# def my_function(*numbers):
+#     total = []
+#     for num in numbers:
+#         if num % 2 == 0:
+#             total.append(num ** 2)
+#     return total
+# print (my_function(1,2,3,4,5) )
         
+
+# def my_function(*numbers):
+#     total = []
+#     for num in numbers:
+#         if num % 2 == 1:
+#             total.append(num * 3)
+#     return total
+# print(my_function(1,2,3,4,5))
+
