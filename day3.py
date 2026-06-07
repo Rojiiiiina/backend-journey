@@ -13,6 +13,6 @@ async def read_name(product_name:str):
     return{"product":f"You searched for {product_name}"}
 
 #Endpoint 6
-@app.get("/blog/{blog_page}")
-async def read_page(blog_page:str):
-    return{"blog":f"This is your {blog_page}"}
+@app.get("/items/{item_id}")
+async def read_item(item_id:int):
+    return{"item": item_id}
