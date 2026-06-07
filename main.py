@@ -27,3 +27,4 @@ def skills():
         "days into journey" : 1,
         "target_job" : "Junior Backend Developer"
     }
+

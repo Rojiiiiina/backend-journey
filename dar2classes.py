@@ -57,16 +57,19 @@
 #     x.live()
 
 
-class Human:
-    def __init__(self, name, height):
-        self.name = name
-        self.__height = height
-    def get_height(self):
-        return self.__height
+# class Human:
+#     def __init__(self, name, height):
+#         self.name = name
+#         self.__height = height
+#     def get_height(self):
+#         return self.__height
 
-p1 = Human("Rojins", 5)
-print(p1.name)
-print(p1.get_height())
+# p1 = Human("Rojins", 5)
+# print(p1.name)
+# print(p1.get_height())
+
+
+
     
 
      
