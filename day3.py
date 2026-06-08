@@ -10,7 +10,7 @@ async def read_name(name:str):
 #Endpoint 5 
 @app.get("/products/{product_name}")
 async def read_name(product_name:str):
-    return{"product":f"You searched for {product_name}"}
+    return{"products": product_name}
 
 #Endpoint 6
 @app.get("/items/{item_id}")
