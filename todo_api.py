@@ -1,19 +1,26 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+
+app = FastAPI()
+
+todos = []
+current_id = 1
 
 class Todo(BaseModel):
     title: str
-    
-app = FastAPI()
+    completed:bool = False
 
 @app.post("/todos/")
-async def create_todo(todo: Todo):
+async def create_todo(todo:Todo):
     return todo
+
+
+    
 
 @app.get("/todos/{id}")
 async def get_todo(id:int):
     return{"id":id}
 
 @app.delete("/todos/{id}")
-async def delet_todo(id:int):
-    return {"message": f"Deleted todo {id}"}
+async def delete_todo(id:int):
+    return {"message": f"Deleted todo {id}"}    
