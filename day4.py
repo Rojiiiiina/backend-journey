@@ -4,7 +4,7 @@ connection = psycopg2.connect(
     host="localhost",
     database="backenddb",
     user="postgres",
-    password="9840"
+    password="your_password"
 )
 
 print("Connected to database successfully!")
